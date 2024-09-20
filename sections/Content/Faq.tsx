@@ -19,6 +19,16 @@ export interface Contact {
 }
 
 export interface Props extends SectionHeaderProps {
+  /**
+   * @format file-uri
+   * @accept application/pdf
+   */
+  pdf?: string;
+  /**
+   * @format file-uri
+   * @accept text/csv
+   */
+  csv?: string;
   questions?: Question[];
   contact?: Contact;
 }
